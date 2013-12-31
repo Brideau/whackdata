@@ -12,12 +12,12 @@ permalink:        pretty
 title:            Whack Data
 tagline:          Ryan Brideau
 url:              http://www.whackdata.com
-paginate:         1
 baseurl:          /
 author:
   name:           Ryan Brideau
   url:            https://twitter.com/Brideau
   email:          ryan dot brideau at google mail
+paginate:         1
 
 # Custom vars
 version:          1.0.0
