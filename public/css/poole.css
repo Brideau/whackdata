@@ -231,9 +231,9 @@ blockquote p:last-child {
 
 img {
   display: block;
+  max-width: 100%;
   margin: auto;
   border-radius: 5px;
-  max-width: 100%; !important
 }
 
 /* Tables */
@@ -263,7 +263,6 @@ tbody tr:nth-child(odd) th {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
-  margin-bottom: 1rem;
 }
 
 
