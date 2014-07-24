@@ -1,3 +1,3 @@
 # Whack Data
 
-The remp for [Whack Data](http://www.whackdata.com)
+The repo for [Whack Data](http://www.whackdata.com)
