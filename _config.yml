@@ -10,7 +10,7 @@ title:            Whack Data
 tagline:          Ryan Brideau
 url:              http://www.whackdata.com
 paginate:         1
-baseurl:          /
+baseurl:          http://brideau.github.io/whackdata/
 author:
   name:           Ryan Brideau
   url:            https://twitter.com/Brideau
