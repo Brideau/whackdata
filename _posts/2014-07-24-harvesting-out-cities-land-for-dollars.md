@@ -69,9 +69,9 @@ _Median Change in Tax/ha: $1837_
 
 <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/brideau.j25okpi0/attribution,zoompan,zoomwheel,geocoder.html?access_token=pk.eyJ1IjoiYnJpZGVhdSIsImEiOiJIazVVNG1FIn0.MTzqTSVYYBaTXC885WRF1Q'></iframe>
 
-And here you really see the contrast between the decreasing property values in the student slum next to campus and everywhere else:
+And here you really see the contrast between the decreasing property values in the student neighbourhood next to campus and everywhere else:
 
-![Student Slum Tax](http://i.imgur.com/o1iO0hl.png)
+![Student Neighbourhood Tax](http://i.imgur.com/o1iO0hl.png)
 
 There's almost too much data in this for a single person to analyze in one shot, so I may be chipping away at this over a few blog posts as I get better at working with TileMill. (Gracen has also offered to provide her highly-trained-urban-designer-brain for a look at it as well, so stay tuned to her blog for that.) Would also love it if people look a look at their own neighbourhoods and gave me some insight into why certain parts are the way they are!
 
