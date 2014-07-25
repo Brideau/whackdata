@@ -29,12 +29,20 @@ So let's start with the first map. I wanted this one to accomplish a couple thin
 
 2.  It should allow somebody to zoom into any part to look at sections in more detail.
 
-So what I did was take each property, calculate its tax levy per hectare, and then compare each of those to the median tax levy per hectare. What this gives me is the ability to take any piece of land, and see how much above/below average it is in terms of how much money it is generating for the city. I then grouped them into 10 buckets based on that difference where each bucket has the same number of properties in it, and designed a separate pop-up that will display the specific property statistics when you hover over it.
+So what I did was take each property, calculate its tax levy per hectare, and then compare each of those to the median tax levy per hectare. What this gives me is the ability to take any piece of land, and see how much above/below average it is in terms of how much money it is generating for the city. I then grouped them into 10 buckets based on that difference where each bucket has the same number of properties in it, and designed a separate pop-up that will display the specific property statistics when you hover over it. 
+
+That was a lot to take in, so let me show you an example:
+
+<p>Let's say somebody has 0.2 ha of land, and pays $5,000/year in tax. Per hectare, that land is generating $25,000 in tax revenue for the city.
+
+The median tax per ha, however, is $34,000. This person would then be earning ($25,000 - $34,000) / $34,000 = -26.5% below the median. </p>
 
 Now, I mentioned that TileMill/MapBox were a bit buggy, and you'll notice that the below map is missing a legend. Well, your guess is as good as mine why this shows up ok on my computer, but breaks entirely when I put it into MapBox. I've spent hours trying to sort that one out. Anywho, here's what it should be:
 
-*Percent More / Less Tax Revenue Generated per Hectare than Median*
+*Percent More / Less Tax Revenue Generated per Hectare Compared to Median*
 ![Fredericton Property Tax Legend](http://i.imgur.com/lRaWic6.png)
+
+_Median Tax/ha: $34,018_
 
 <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/brideau.j264l49m/attribution,zoompan,zoomwheel,geocoder.html?access_token=pk.eyJ1IjoiYnJpZGVhdSIsImEiOiJIazVVNG1FIn0.MTzqTSVYYBaTXC885WRF1Q'></iframe>
 
@@ -52,10 +60,12 @@ And worst-still, the newst-style suburbs near Canterbury Drive (where they rarel
 
 This was interesting (and there's a ton more I could have gone into here), but I also wanted to see if I could take it a step further. Since I had data from 2011-2014, I wanted to see if I could spot any clusters of neighbourhoods that were increasing or decreasing in value. This processes often take well over 4 years, however, but it was worth a try.
 
-Taking the same approach as above, I calculated the change in tax revenue per hectare between 2011 and 2014, took the median amount, and compared all the values to that amount. Once again, I also group them into 10 buckets.
+Taking the same approach as above, I calculated the change in tax revenue per hectare between 2011 and 2014, took the median amount, and compared all the values to that amount. Once again, I also group them into 10 buckets. Note that the number below isn't the % change in tax for a property, but how much a given property changed compared to on average how all the other properties changed. So, if you pay $2000/ha more this year than you did 4 years ago, but everyone else does as well, your increase would be 0% more than the average.
 
-*Percent More / Less Tax Revenue Generated per Hectare Than Median*
+*Percent Difference Tax Change per Hectare Compared to Median*
 ![Fredericton Property Tax Legend](http://i.imgur.com/zUHvTpfl.png)
+
+_Median Change in Tax/ha: $1837_
 
 <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/brideau.j25okpi0/attribution,zoompan,zoomwheel,geocoder.html?access_token=pk.eyJ1IjoiYnJpZGVhdSIsImEiOiJIazVVNG1FIn0.MTzqTSVYYBaTXC885WRF1Q'></iframe>
 
