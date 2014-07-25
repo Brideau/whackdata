@@ -35,7 +35,7 @@ That was a lot to take in, so let me show you an example:
 
 <p>Let's say somebody has 0.2 ha of land, and pays $5,000/year in tax. Per hectare, that land is generating $25,000 in tax revenue for the city.
 
-The median tax per ha, however, is $34,000. This person would then be earning ($25,000 - $34,000) / $34,000 = -26.5% below the median. </p>
+The median tax per ha, however, is $34,000. This person would then be earning ($25,000 - $34,000) / $34,000 = -26.5%. That is, 26.5% below the median. </p>
 
 Now, I mentioned that TileMill/MapBox were a bit buggy, and you'll notice that the below map is missing a legend. Well, your guess is as good as mine why this shows up ok on my computer, but breaks entirely when I put it into MapBox. I've spent hours trying to sort that one out. Anywho, here's what it should be:
 
