@@ -50,7 +50,7 @@ And worst-still, the newst-style suburbs near Canterbury Drive (where they rarel
 
 ![Fredericton Canterbury](http://i.imgur.com/uXtK89h.png)
 
-This was interesting (and there's a ton more I could have gone into here), but I also wanted to see if I could take it a step further. Since I had data from 2011-2014, I wanted to see if I could spot any clusters of neighbourhoods that were increasing or decreasing in value (which could crudely map to areas that were gentrifying/slumming). This processes often take well over 4 years, however, but it was worth a try.
+This was interesting (and there's a ton more I could have gone into here), but I also wanted to see if I could take it a step further. Since I had data from 2011-2014, I wanted to see if I could spot any clusters of neighbourhoods that were increasing or decreasing in value. This processes often take well over 4 years, however, but it was worth a try.
 
 Taking the same approach as above, I calculated the change in tax revenue per hectare between 2011 and 2014, took the median amount, and compared all the values to that amount. Once again, I also group them into 10 buckets.
 
