@@ -13,7 +13,7 @@ For land size data, I used [GeoNB's Digital Property Maps of the whole province]
 
 The main tools I used were:
 
-* R for getting the data into something I could work with and doing all the math,
+* R for getting the data into something I could work with and doing all the math (code [here](https://github.com/Brideau/HarvestProperty/blob/master/PropertyTaxAnalysis.R)),
 
 * QGIS for taking that data and mapping it to the land data [tutorial](https://www.mapbox.com/tilemill/docs/guides/joining-data/#using-quantum-gis-to-join-your-data)
 
