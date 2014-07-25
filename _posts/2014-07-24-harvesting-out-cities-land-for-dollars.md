@@ -5,7 +5,7 @@ title: Harvesting Our Cities' Land for Dollars
 
 ![Downtown Fredericton's Tax Revenue per Hectare](http://i.imgur.com/KMVBQXZ.png)
 
-A few weeks ago my partner Gracen (of [Another Place for Me](http://anotherplaceforme.com) fame) finished editing a video for this cool guy named Joe Minicozzi on ["How We Measure the City"](https://www.youtube.com/watch?v=yhvKIaLjOJ8). Knowing my weird obsession with data, we sat down to watch it together, and one simple idea of his blew my mind: why don't we treat our cities like farms? That is, when we consider how to use the scarce land we have in city limits for different things, we often measure how much a certain building will pay us back in tax revenue. _But_, we almost never consdier how much we are earning _per acre_. And that's a big mistake.
+A few weeks ago my partner Gracen (of [Another Place for Me](http://anotherplaceforme.com) fame) finished editing a video for this cool guy named Joe Minicozzi on ["How We Measure the City"](https://www.youtube.com/watch?v=yhvKIaLjOJ8). Knowing my weird obsession with data, we sat down to watch it together, and one simple idea of his blew my mind: why don't we treat our cities like farms? That is, when we consider how to use the scarce land we have in city limits for different things, we often measure how much a certain building will pay us back in tax revenue. _But_, we almost never consider how much we are earning _per acre_. And that's a big mistake.
 
 Naturally, I wanted to see what Fredericton's profile would look like. And in particular, I wanted to see if I could create of the maps that Joe's team created using only open source and freely available tools, and do it in such a way that it could be embedded online and easily access.
 
