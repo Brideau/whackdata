@@ -17,7 +17,7 @@ Using the same [NASA SEDAC data that James used](http://sedac.ciesin.columbia.ed
 
 And, for my fellow New Brunswickers, here's the same dataset of NB properties I plotted a while ago, plotted again using a line graph:
 
-[![New Brunswick Property Locations](http://i.imgur.com/0R4daMp.png)](http://i.imgur.com/zn6UGPW.png)
+[![New Brunswick Property Locations](http://i.imgur.com/0R4daMp.png)](http://i.imgur.com/8yUtXIu.png)
 
 And finally, here is the property value data from my last post for Fredericton. Note that, as mentioned above, unless you're familiar with the geography of the area, it may not be directly apparent what you're looking at here. For those that are, you can immediately spot the river flowing through the middle of town with the tributaries flowing in:
 
