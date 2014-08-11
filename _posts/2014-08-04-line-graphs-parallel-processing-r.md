@@ -27,7 +27,9 @@ These maps aren't the most practical ways of plotting data into a third dimensio
 
 ### So, how was it done?
 
-Well, like everything else I do on here, I wanted to accomplish this using only freely available software. In this case, I used a combination of R, QGIS and Libre Office. The work was divided into three main pieces:
+_**EDIT:** I've updated the below instructions since this was originally published to provide an alternative to using QGIS (thanks [@Zecca_Lehn](https://twitter.com/zecca_lehn) for pointing out I could do this in R itself). I also improved the performance about 3x by replacing my data frames with data tables._
+
+Well, like everything else I do on here, I wanted to accomplish this using only freely available software. In this case, I used a combination of R, QGIS and Libre Office (the latter two being optional). The work was divided into three main pieces:
 
 1.  Extract the data from NASA's data set.
 2.  Crunch the data to prepare it for plotting.
@@ -37,14 +39,22 @@ All the code for processing and plotting is available here: [GeospatialLineGraph
 
 #### Extracting the Data
 
-James originally used NASA's population density data from the year 2000. Though the outcome should be the same, I decided to use the [raw population data available here](http://sedac.ciesin.columbia.edu/data/set/gpw-v3-population-count). On that page, go to download, select the format as ".ascii", the resolution as 1/2°, and the year as 2000. (I actually used the 2.5 arc minute dataset, which was much higher resolution than necessary.)
+James originally used NASA's population density data from the year 2000. Though the outcome should be the same, I decided to use the [raw population data available here](http://sedac.ciesin.columbia.edu/data/set/gpw-v3-population-count). On that page, go to download, select the format as ".ascii", the resolution as 1/2°, and the year as 2000.
 
-Once you've downloaded it, do the following:
+Once you've downloaded it, you can do either of the following to get the data into a workable form:
 
-1.  Import into QGIS
+_Using R_
+
+1.  Put the file glp00ag30.asc into a folder called DataSets in your working directory
+2.  Run [this part of the R script](https://github.com/Brideau/GeospatialLineGraphs/blob/master/01GenerateData.R#L21) which uses the 'raster' package to turn it into a set of points. The rest of the script is described in the next section.
+
+_Using QGIS_
+
+1.  Import the data into QGIS
 2.  Go to Raster > Conversion > Polygonize (Raster to Vector), and check the "Add to map" box
-3.  Select that layer, and go to Vector > Geometry Tools > Polygon Centroids and follow the menu items. This will generate another layer with point data from your polygon data.
-4. Finally, right click the points layer, and save it as a CSV file. It should automatically export the X & Y coordinates.
+3.  Select that layer, and go to Vector > Geometry Tools > Polygon Centroids and follow the menu items, making sure to check "Add result to canvas". This will generate another layer with point data from your polygon data.
+4.  Right click the points layer, and save it as a CSV file. It should automatically export the X & Y coordinates.
+5.  Finally, load the data with [this part of the script](https://github.com/Brideau/GeospatialLineGraphs/blob/master/01GenerateData.R#L29) and make sure to comment out the part above that uses the 'raster' function mentioned above.
 
 There, you data is ready to be crunched.
 
@@ -60,9 +70,9 @@ The basic idea behind what this does is this:
 4.  Move the square over an amount of longitude equal to the width of the square, and repeat the above calculation.
 5. Do this until you've calculated everything, and output it all to a CSV file.
 
-Now, when you're dealing with 500,000+ pieces of data, this can take a while. In the case of the NB data, it originally took 2 hours to crunch on my 2.3 GHz i7, which has 4 cores (8 virtual). The world data, since I (mistakenly) used the 2.5' data set, had 1.6M data points, would have taken forever. 
+Now, when you're dealing with 500,000+ pieces of data, this can take a while if you're not taking advantage of your hardware's capabilities. In the case of the NB data, it originally took 2 hours to crunch on my 2.3 GHz i7, which has 4 cores (8 virtual), but only one was being used.
 
-Luckily, R now has the ability to do parallel processing to take full advantage of multi-core CPUs. Marcus over at R-bloggers has [a great tutorial on how to do this in R](http://www.r-bloggers.com/a-brief-foray-into-parallel-processing-with-r/) if you want to have a look. Using this got the time from 2 hours to about 6 minutes for the NB data set, while it still took about 1.5 hours to do the world data (again, you can save yourself the headache here by using lower resolution data).
+Luckily, R now has the ability to do parallel processing to take full advantage of multi-core CPUs. Marcus over at R-bloggers has [a great tutorial on how to do this in R](http://www.r-bloggers.com/a-brief-foray-into-parallel-processing-with-r/) if you want to have a look. Furthermore, using data tables instead of data frames can also improve performance by, in my experience, about a factor of 3 for this computation. Using both of these together got the time to process from 2 hours to about 2 minutes for both the NB and world population data set.
 
 #### Plotting the Data
 
