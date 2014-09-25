@@ -6,6 +6,7 @@ plugins:          [jekyll-paginate]
 
 # Permalinks
 permalink:        pretty
+relative_permalinks: true
 
 # Setup
 title:            Whack Data
