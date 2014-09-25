@@ -1,12 +1,12 @@
 # Dependencies
 
-markdown:         redcarpet
-highlighter:      pygments
-plugins:          [jekyll-paginate]
+markdown:            redcarpet
+highlighter:         pygments
 
 # Permalinks
-permalink:        pretty
-relative_permalinks: true
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
 
 # Setup
 title:            Whack Data
@@ -20,10 +20,6 @@ author:
 paginate:         1
 
 # Custom vars
-version:          1.0.0
+version:             1.0.0
 github:
-  repo:           https://github.com/brideau
-pages_list:
-  About: '/about'
-  Archive: '/archive'
-  Feed: '/atom.xml'
+  repo:              https://github.com/poole/poole
