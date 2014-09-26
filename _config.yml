@@ -14,6 +14,15 @@ title:            Whack Data
 tagline:          Ryan Brideau
 url:              http://www.whackdata.com
 baseurl:          /
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _scss
+  style:            :compressed
+
+# About/contact
 author:
   name:           Ryan Brideau
   url:            https://twitter.com/Brideau
