@@ -8,7 +8,8 @@ relative_permalinks: true
 title:            Whack Data
 tagline:          Ryan Brideau
 url:              http://www.whackdata.com
-baseurl:          /
+paginate:         1
+basename:         ""
 
 # Assets
 #
@@ -22,7 +23,6 @@ author:
   name:           Ryan Brideau
   url:            https://twitter.com/Brideau
   email:          ryan dot brideau at google mail
-paginate:         1
 
 # Custom vars
 version:             1.0.0
