@@ -5,7 +5,7 @@ title: Pokemon Go - Finding Nests and Testing Theories
 
 I've developed some tooling for doing date/time and geospatial analysis on Pokemon Go data, which can be used for testing different theories based on historical data.
 
-If you're interested in contributing to The Silph Road's brand new [Global Nest Atlas](https://www.reddit.com/r/TheSilphRoad/comments/4ujm48/the_global_nest_atlas_join_us_in_mapping_the/), for example, you can plug QGIS into it to and use it to find nests, as I did today when I found a Diglett nest in a park in my city:
+If you're interested in contributing to The Silph Road's brand new [Global Nest Atlas](https://www.reddit.com/r/TheSilphRoad/comments/4ujm48/the_global_nest_atlas_join_us_in_mapping_the/), for example, you can plug QGIS into it and use it to find nests, as I did today when I found a Diglett nest in a park in my city:
 
 ![QGIS Screenshot](http://i.imgur.com/WxzV0pb.png)
 
