@@ -1,6 +1,7 @@
 # Dependencies
 markdown:         redcarpet
-pygments:         true
+highlighter:      true
+gems:             [jekyll-paginate]
 
 # Permalinks
 permalink:        pretty
@@ -20,7 +21,7 @@ author:
 version:          1.0.0
 github:
   repo:           https://github.com/brideau
-pages_list:       
+pages_list:
   About: '/about'
   Archive: '/archive'
   Feed: '/atom.xml'
