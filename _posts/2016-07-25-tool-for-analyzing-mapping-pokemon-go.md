@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pokemon Go - Findings Nests and Testing Theories
+title: Pokemon Go - Finding Nests and Testing Theories
 ---
 
 I've developed some tooling for doing date/time and geospatial analysis on Pokemon Go data, which can be used for testing different theories based on historical data.
