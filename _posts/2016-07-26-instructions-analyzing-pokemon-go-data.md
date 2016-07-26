@@ -19,7 +19,7 @@ In this post, I'll walk through how to get it up and running. This is meant to b
 
 ## Database Setup
 
-First, of course, you'll need a server of some kind. Pokelyzer should run on any operating system, but these instructions will be for Unix-like operating systems because that's what I have handy.
+First, of course, you'll need a server of some kind. Pokelyzer should run on any operating system, but these instructions will be for Unix-like operating systems - specifically, Ubuntu - because that's what I have handy. If any of the commands don't work for you, trying doing a quick Google for the equivalent command for your operating system.
 
 First things first, install Postgres:
 
