@@ -5,9 +5,9 @@ title: About
 
 <p class="message">
   Hey. I'm Ryan. I play with data.
-
+<br><br>
   I used to be the data & analytics product manager at LiveOps Cloud, but these days I am a data visualization researcher in the University of New Brunswick's Geodesy and Geomatics Engineering department.
-
+<br><br>
   I also founded Citizens Code, where I do data journalism using public data, and am an occasional writer for Priceonomics.
 </p>
 
