@@ -19,9 +19,9 @@ In this post, I'll walk through how to get it up and running. This is meant to b
 
 ## Database Setup
 
-First, of course, you'll need a server of some kind. Pokelyzer should run on any operating system, but these instructions will be for Unix-like operating systems - specifically, Ubuntu - because that's what I have handy. If any of the commands don't work for you, trying doing a quick Google for the equivalent command for your operating system.
+First, of course, you'll need a server of some kind. Pokelyzer should run on any operating system that runs PostgreSQL, but these instructions will be for Unix-like operating systems - specifically, Ubuntu - because that's what I have handy. If any of the commands don't work for you, trying doing a quick Google for the equivalent command for your operating system.
 
-First things first, install Postgres:
+First things first, install PostgreSQL:
 
 {% highlight bash %}
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
@@ -30,7 +30,7 @@ sudo apt-get update
 sudo apt-get install postgresql postgresql-contrib
 {% endhighlight %}
 
-By default, Postgres does not allow remote connections. But if we want to use something like QGIS or Tableau, we'll need to allow them. Open `pg_hba.conf` and scroll to the very bottom of the file (if this is in the future and a newer version has been released, replace the 9.5):
+By default, PostgreSQL does not allow remote connections. But if we want to use something like QGIS or Tableau, we'll need to allow them. Open `pg_hba.conf` and scroll to the very bottom of the file (if this is in the future and a newer version has been released, replace the 9.5):
 
 {% highlight bash %}
 sudo nano /etc/postgresql/9.5/main/pg_hba.conf
