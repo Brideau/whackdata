@@ -5,7 +5,15 @@ title: Doing Data Analysis With Pokemon Go - Pokelyzer Set Up Instructions
 
 So you want to do some Pokemon Go data analysis, eh? Great, let's get started.
 
-Yesterday I did a short post on some tooling I created that allowed me to do some [data analysis and visualization using historical Pokemon Go data](http://www.whackdata.com/2016/07/25/tool-for-analyzing-mapping-pokemon-go/). What do I mean by "tooling", exactly? Well, basically it's a database. It depends on other people's software to send data into it, and other people's software to plug into it to perform the analysis. What makes it special is that follows [dimensional modeling](https://en.wikipedia.org/wiki/Dimensional_modeling) techniques to make data analysis dead simple and fast, and automatically creates spatial objects that make the data easy to use with GIS software. You can find the GitHub repo here: [https://github.com/Brideau/pokelyzer](https://github.com/Brideau/pokelyzer)
+Yesterday I did a short post on some tooling I created that allowed me to do some [data analysis and visualization using historical Pokemon Go data](http://www.whackdata.com/2016/07/25/tool-for-analyzing-mapping-pokemon-go/), like this visualization of spawn clusters:
+
+![Tableau Screenshot of Spawn Points](http://i.imgur.com/xRY8bLn.png)
+
+Or this one of a Diglett nest:
+
+![QGIS Screenshot](http://i.imgur.com/WxzV0pb.png)
+
+What do I mean by "tooling", exactly? Well, basically it's a database. It depends on other people's software to send data into it, and other people's software to plug into it to perform the analysis. What makes it special is that follows [dimensional modeling](https://en.wikipedia.org/wiki/Dimensional_modeling) techniques to make data analysis dead simple and fast, and automatically creates spatial objects that make the data easy to use with GIS software. You can find the GitHub repo here: [https://github.com/Brideau/pokelyzer](https://github.com/Brideau/pokelyzer)
 
 In this post, I'll walk through how to get it up and running. This is meant to be understood by beginners to data analysis that have some experience running their own web server, but not a ton of experience setting up databases. It's been a little while since I was new to this, however, so I might gloss over areas that need a bit more explaining. If I do, leave a comment below to let me know and I'll update the post. If you want to be really helpful, submit a [pull request to this post](https://github.com/Brideau/whackdata/blob/gh-pages/_posts/2016-07-26-instructions-analyzing-pokemon-go-data.md) with recommended additions (same goes for typos).
 
