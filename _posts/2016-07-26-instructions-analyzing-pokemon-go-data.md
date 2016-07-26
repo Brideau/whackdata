@@ -3,13 +3,16 @@ layout: post
 title: Doing Data Analysis With Pokemon Go - Pokelyzer Set Up Instructions
 ---
 
-So you want to do some Pokemon Go data analysis, eh? Great, let's get started.
-
-Yesterday I did a short post on some tooling I created that allowed me to do some [data analysis and visualization using historical Pokemon Go data](http://www.whackdata.com/2016/07/25/tool-for-analyzing-mapping-pokemon-go/), like this visualization of spawn clusters:
-
 ![Tableau Screenshot of Spawn Points](http://i.imgur.com/xRY8bLn.png)
 
-Or this one of a Diglett nest:
+<p class="message">
+<strong>TL;DR</strong><br>
+We're going to make a database you can plug things like QGIS, ArcGIS, or Tableau into to find nests and spawn points for rare Pokemon. You'll need a server, and will be setting up PostgreSQL, PostGIS, PokemonGo-Map, and importing a set of tables and database settings I've already created.
+</p>
+
+So you want to do some Pokemon Go data analysis, eh? Great, let's get started.
+
+Yesterday I did a short post on some tooling I created that allowed me to do some [data analysis and visualization using historical Pokemon Go data](http://www.whackdata.com/2016/07/25/tool-for-analyzing-mapping-pokemon-go/), like this visualization of spawn clusters above, or this one of a Diglett nest:
 
 ![QGIS Screenshot](http://i.imgur.com/WxzV0pb.png)
 
