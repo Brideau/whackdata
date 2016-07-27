@@ -23,4 +23,9 @@ In the database itself, I've built a dimensional model with special time and dat
 
 Before I put any more work into this, I just wanted to get a feeling from the community if this would be useful to you. If so, I can throw it up on Github with some instructions for how to get it working.
 
+<p class="message">
+<strong>UPDATE</strong><br>
+I've since released the code for this, along with instructions for how to set it up. In you're interested in that, check out this post: <a href="/2016/07/26/instructions-analyzing-pokemon-go-data/">Doing Data Analysis With Pokemon Go - Pokelyzer Set Up Instructions</a>. Or if you're like to see some early results from the tool, have a look at <a href="/2016/07/27/finding-locally-rare-pokemon/">Finding Hotpots for Locally Rare Pokemon Using Tableau</a>.
+</p>
+
 -Ryan
