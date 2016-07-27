@@ -249,4 +249,9 @@ Now that you have this up and running, if you already have experience using QGIS
 
 If all that sounded like gibberish to you - fear not - I'll put putting up future parts in the coming days that show how I created some of the original visualizations. Stay tuned!
 
+<p class="message">
+<strong>UPDATE</strong><br>
+If you've got this running and would like to use it with Tableau, check out this more recent post: <a href="http://www.whackdata.com/2016/07/27/finding-locally-rare-pokemon/">Finding Hotpots for Locally Rare Pokemon Using Tableau</a>
+</p>
+
 -Ryan
