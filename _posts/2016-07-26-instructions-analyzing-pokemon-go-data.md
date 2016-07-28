@@ -22,7 +22,7 @@ In this post, I'll walk through how to get it up and running. This is meant to b
 
 ## Database Setup
 
-First, of course, you'll need a server of some kind. Pokelyzer should run on any operating system that runs PostgreSQL, but these instructions will be for Unix-like operating systems - specifically, Ubuntu - because that's what I have handy. If any of the commands don't work for you, trying doing a quick Google for the equivalent command for your operating system. Or if you just want to run it locally to see how it works, try [this mac client](http://postgresapp.com/) of [this multi-os client](http://www.enterprisedb.com/products-services-training/pgdownload) and skip most of the steps below.
+First, of course, you'll need a server of some kind. Pokelyzer should run on any operating system that runs PostgreSQL, but these instructions will be for Unix-like operating systems - specifically, Ubuntu - because that's what I have handy. If you just want to run it locally to see how it works, try [this mac client](http://postgresapp.com/) or [this multi-os client](http://www.enterprisedb.com/products-services-training/pgdownload) and skip most of the steps below. If you're on Windows, Reddit user [Matteng0](https://www.reddit.com/user/Matteng0) put together an amazingly detailed guide [here](https://www.reddit.com/r/TheSilphRoad/comments/4uy2ym/guide_windows_installation_for_pokelyzer_and/) so you can just follow that.
 
 First things first, install PostgreSQL:
 
