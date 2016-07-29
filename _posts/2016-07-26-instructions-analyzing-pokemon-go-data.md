@@ -91,7 +91,7 @@ Let's now connect to the database and start setting things up. Download and inst
 
 Now try connecting to the database. If your connection times out, read the above instructions closely again as it is likely a firewall or database security configuration issue.
 
-Once you've successfully connected, right-click Databases and click `New Database...`. Name the database `pokemon_go` and make yourself the owner:
+Once you've successfully connected, right-click Databases and click `New Database...`. Name the database `pokemon_go` and make yourself the owner. Go to the definition tab and for "Encoding" select UTF8.
 
 ![Create and Name a Database](http://i.imgur.com/o4vhe5e.png)
 
