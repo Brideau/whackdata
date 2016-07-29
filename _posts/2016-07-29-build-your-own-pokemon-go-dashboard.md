@@ -5,9 +5,9 @@ title: Build Your Own Online Dashboard for Finding Pokemon
 
 Yesterday's tutorial covered getting up and running with Tableau using Pokelyzer, and today's will build on that. I had ambitions to get a tutorial on using the date and time tables done today, but I think I found something even better: how to build an interactive, online dashboard where you can see how Pokemon spawn individually or based on their _type_. Or, frankly, anything else you want!
 
-To give you an idea of where we're heading, here's the final result:
+To give you an idea of where we're heading, here's the final result (click to go to the full map):
 
-<a href="https://public.tableau.com/views/PokemonTest/Sheet2?:embed=y&:display_count=yes" target="_blank">![Tableau Map Link](http://i.imgur.com/xGRIP6V.png)</a>
+<a href="https://public.tableau.com/views/PokemonTest/Sheet2?:embed=y&:display_count=yes" target="_blank">![Tableau Map Link](http://imgur.com/a/z4rUq.png)</a>
 
 *Thank you to [/u/superhanss_](https://www.reddit.com/user/superhanss_) for letting me know that Tableau could do this.* I'm really hoping that anybody running Pokelyzer for a city could set one of these puppies up for everyone else to use.
 
