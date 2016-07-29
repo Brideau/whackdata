@@ -236,7 +236,7 @@ def parse_map(map_dict, iteration_num, step, step_location):
 Now if you save everything and run the PokemonGo-Map server with the `--pokel-pass` parameter, it should start logging everything to your database!
 
 {% highlight bash %}
-python runserver.py -a ptc -u [YOUR USERNAME] -p [YOUR PASS] -l "45.95845 -66.662327" -st 25 -H 0.0.0.0 --google-maps-key [YOUR GOOGLE MAPS KEY] --pokel-pass "[YOUR DB PASSWORD]"
+python runserver.py -a ptc -u [YOUR USERNAME] -p [YOUR PASS] -l "45.95845 -66.662327" -st 25 -H 0.0.0.0  --gmaps-key [YOUR GOOGLE MAPS KEY] --pokel-pass "[YOUR DB PASSWORD]"
 {% endhighlight %}
 
 If you go back into pgAdmin, right click the `spotted_pokemon` table and view the top 100 rows of data, you should see it being populated!
