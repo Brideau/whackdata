@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Build Your Own Online Dashboard for Finding Pokemon
+title: Using Tableau to Build a UI for Pokelyzer
 ---
 
 Yesterday's tutorial covered getting up and running with Tableau using Pokelyzer, and today's will build on that. I had ambitions to get a tutorial on using the date and time tables done today, but I think I found something even better: how to build an interactive, online dashboard where you can see how Pokemon spawn individually or based on their _type_. Or, frankly, anything else you want!
