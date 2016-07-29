@@ -129,17 +129,13 @@ If you have some trouble with this, don't worry, it didn't go very smoothly for 
 
 Next we're going to modify the program to fork the data into our database. As you go through these steps, check the [sample files in the Github repo](https://github.com/Brideau/pokelyzer) if things aren't clear.
 
-In the repository, go into the `pogom` directory and find the `utils.py` file. In the `get_args()` function, after all the `add_argument` lines, add one more for `--pokel-pass` as shown here:
+In the repository, go into the `pogom` directory and find the `utils.py` file. In the `get_args()` function, after all the `add_argument` lines, but just before `parser.set_defaults(DEBUG=Flase)` add one more line for `--pokel-pass`:
 
 {% highlight python %}
-def get_args():
-
-  [A bunch of stuff]
-
-  parser.add_argument('-t', '--threads', help='Number of search threads', required=False, type=int, default=5, dest='num_threads')
   parser.add_argument('--pokel-pass', help='Password for Pokelizer database')
-  parser.set_defaults(DEBUG=False)
 {% endhighlight %}
+
+See [this file](https://github.com/Brideau/pokelyzer/blob/master/sample_utils.py) as an example if you're having trouble understanding the above.
 
 This will allow us to pass in our database password when we start PokemonGo-Map so that we don't need to store a record of it.
 
