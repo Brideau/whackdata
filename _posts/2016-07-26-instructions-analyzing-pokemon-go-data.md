@@ -132,7 +132,7 @@ Next we're going to modify the program to fork the data into our database. As yo
 In the repository, go into the `pogom` directory and find the `utils.py` file. In the `get_args()` function, after all the `add_argument` lines, but just before `parser.set_defaults(DEBUG=Flase)` add one more line for `--pokel-pass`:
 
 {% highlight python %}
-  parser.add_argument('--pokel-pass', help='Password for Pokelizer database')
+parser.add_argument('--pokel-pass', help='Password for Pokelizer database')
 {% endhighlight %}
 
 See [this file](https://github.com/Brideau/pokelyzer/blob/master/sample_utils.py) as an example if you're having trouble understanding the above.
