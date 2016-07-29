@@ -7,7 +7,7 @@ Yesterday's tutorial covered getting up and running with Tableau using Pokelyzer
 
 To give you an idea of where we're heading, here's the final result (click to go to the full map):
 
-<a href="https://public.tableau.com/views/PokemonTest/Sheet2?:embed=y&:display_count=yes" target="_blank">![Tableau Map Link](http://imgur.com/a/z4rUq.png)</a>
+<a href="https://public.tableau.com/views/PokemonTest/Sheet2?:embed=y&:display_count=yes" target="_blank">![Tableau Map Link](http://imgur.com/kAhGkSc.png)</a>
 
 *Thank you to [/u/superhanss_](https://www.reddit.com/user/superhanss_) for letting me know that Tableau could do this.* I'm really hoping that anybody running Pokelyzer for a city could set one of these puppies up for everyone else to use.
 
