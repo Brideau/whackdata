@@ -44,7 +44,7 @@ query =  "INSERT INTO spotted_pokemon (name, encounter_id, last_modified_time, t
 data = (pokemon_name, encounter_id, last_modified_time, time_until_hidden_ms, hidden_time_unix_s, hidden_time_utc, spawnpoint_id, longitude, latitude, pokemon_id, longitude_jittered, latitude_jittered, pokemon_go_era)
 {% endhighlight %}
 
-  - Turn your server back on, this time just add an extra parameter, `--pokel-era 2`, which identifies the current "era" as 2.
+  - Turn your server back on, this time just add an extra parameter, `--pokel-era "2"`, which identifies the current "era" as 2.
 
 And after that, we're back in action: you'll now have a field you can use in Tableau or any other tool to choose whether you're interested in data from era "1" or era "2".
 
