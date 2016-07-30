@@ -48,7 +48,7 @@ Speaking of which, let's run through an example of that now.
 
 ## Using Tableau to create maps
 
-Before you get started with Tableau, you'll have to follow my guide from yesterday on [getting Pokelyzer set up](http://www.whackdata.com/2016/07/26/instructions-analyzing-pokemon-go-data/). If you tried yesterday and couldn't get it to work, I've added some instructions on how to get it set up on your own computer instead of a server, so give it another look. If you _did_ get it working, I found a bug late last night so you'll want to run the patching SQL code mentioned in the [Readme](https://github.com/Brideau/pokelyzer) or else this tutorial won't work.
+Before you get started with Tableau, you'll have to follow my guide from yesterday on [getting Pokelyzer set up](https://github.com/Brideau/pokelyzer/wiki). If you tried yesterday and couldn't get it to work, I've added some instructions on how to get it set up on your own computer instead of a server, so give it another look. If you _did_ get it working, I found a bug late last night so you'll want to run the patching SQL code mentioned in the [Readme](https://github.com/Brideau/pokelyzer) or else this tutorial won't work.
 
 To get started, you'll need Tableau. If you want to connect it to a PostgreSQL database, it will cost you some money after the trial. (If it's not available during the trial period, let me know and I will write a script to export data from the database to a CSV file.) Or if you're a student like me, you can get a free license [here](http://www.tableau.com/academic/students). I'm planning to put up tutorials with free alternatives shortly, but bear with me for now.
 
