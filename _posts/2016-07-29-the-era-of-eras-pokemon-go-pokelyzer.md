@@ -46,9 +46,19 @@ data = (pokemon_name, encounter_id, last_modified_time, time_until_hidden_ms, hi
 
   - Turn your server back on, this time just add an extra parameter, `--pokel-era "2"`, which identifies the current "era" as 2.
 
-And after that, we're back in action: you'll now have a field you can use in Tableau or any other tool to choose whether you're interested in data from era "1" or era "2".
-
 If somebody names these eras something special in the future, we can just create a new table like we did for the Pokemon Info table and join them to give them names. And if there's a big change in the future, we can just follow the same procedure and switch the "2" to a "3".
+
+## Updating Tableau
+
+If you already have your data loaded into Tableau, you'll need to go back to the Data Source tab, and drag the `spotted_pokemon` table from the left over top of the `spotted_pokemon` table in the tree diagram.
+
+![Update Tableau](http://i.imgur.com/NynniXP.png)
+
+Then you can navigate back to your worksheets. If you're using an extract, it may take a few mins to update.
+
+Lastly, make sure that the `pokemon_go_era` field is in the Dimensions panel and not the Measures panel. If it isn't, drag it from one to the next.
+
+After that, we're back in action: you'll now have a field you can use Tableau to choose whether you're interested in data from era "1" or era "2" - just drag it into the Filters box, and right-click and choose "Show filter" to get quick access to it.
 
 ## This Could Have Been Easier
 
