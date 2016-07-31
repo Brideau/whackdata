@@ -83,7 +83,7 @@ For now we'll ignore that some Pokemon can be two types at the same time since t
 
 Since many Pokemon can be the same type, there's currently no way to tell the difference between points just from looking at the map currently. In my case, all the points are blue, regardless of the Pokemon they represent. Let's change that.
 
-Drag the `Name` field from either the `pokemon_info` table or the `spotted_pokemon` table over the Color item in the "Marks" box. It doesn't matter which `Name` field you use because I duplicated them in the database to make the workflow a bit smoother. If you get a warning about having too many items, disregard it and use all the values. You should now have a map covered in different colored dots, which will change depending on which `Type 1` item you have selected.
+Drag the `Name` field from either the `pokemon_info` table table over the Color item in the "Marks" box. If you get a warning about having too many items, disregard it and use all the values. You should now have a map covered in different colored dots, which will change depending on which `Type 1` item you have selected.
 
 <div align="center"><img src="http://imgur.com/SQVU0uJ.png"></div>
 
