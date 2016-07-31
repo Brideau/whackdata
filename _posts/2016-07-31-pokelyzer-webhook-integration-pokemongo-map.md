@@ -3,7 +3,7 @@ layout: post
 title: Pokelyzer Webhook Integration with PokemonGo-Map (aka Making Your Life Significantly Easier)
 ---
 
-<div align="center"><img src="http://imgur.com/btp5OCc.png"></div>
+![Webhooks!](http://imgur.com/btp5OCc.png)
 
 Since I first created Pokelyzer, it's been a hack job. For the dozens of people that made it though the painful steps of modifying the PokemonGo-Map code and got it working: thank you for your patience. But after today, that should no longer be necessary.
 
