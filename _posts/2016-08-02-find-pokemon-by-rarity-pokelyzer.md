@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Finding Pokemon by Their Rarity with Pokelyzer
+title: Mapping Pokemon by Their Rarity
 ---
 
 At long last, I've added a simple patch that lets you group Pokemon by rarity in Pokelyzer! (Thanks Niklas and [ferazambuja](https://github.com/ferazambuja) for the help!)
