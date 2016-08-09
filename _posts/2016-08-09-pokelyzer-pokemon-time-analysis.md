@@ -55,6 +55,11 @@ But there's one problem: this only shows the 15-minute intervals that had at lea
 
 <div align="center"><img src="http://imgur.com/gxGP6Uq.png"></div>
 
+<p class="message">
+<strong>EDIT</strong><br>
+It was pointed out that the x-axis isn't sorted correctly, and this is true. You can right-click the Label 15 item and go to Sort and pick a sorting method but this doesn't always create a sort that is sensible. Sadly, the best solution I've found to this is to choose the 'manual' sort option and do it by hand, but this is a pain for a large number of time increments. I'm hunting for a solution now, but if you find one in the meantime, please post it in the comments below.
+</p>
+
 If you want to get a bit fancier, try dragging another "Name" dimension into the row item, but put it to the left of the earlier "Count" field. Now, if you check more than one Pokemon, you get a different chart for each one. In effect, you now have a y-axes with multi levels to it, but a common x-axis.
 
 <div align="center"><img src="http://imgur.com/DLp5VbM.png"></div>
