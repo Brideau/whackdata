@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Doing Data Analysis With Pokemon Go - Pokelyzer Set Up Instructions
+title: Doing Data Analysis With Pokemon Go&#58; Pokelyzer Set Up Instructions
 ---
 
 ![Tableau Screenshot of Spawn Points](http://i.imgur.com/xRY8bLn.png)

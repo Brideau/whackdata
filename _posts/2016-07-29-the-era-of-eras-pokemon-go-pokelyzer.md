@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Era of Eras - Updating Pokelyzer for the Nest Switch-a-Roo
+title: The Era of Eras&#58; Updating Pokelyzer for the Nest Switch-a-Roo
 ---
 
 As you might have heard, nests have [suddenly and dramatically switched around](https://www.reddit.com/r/TheSilphRoad/comments/4v78mw/psa_nests_have_changed/).
