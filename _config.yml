@@ -27,6 +27,11 @@ github:
   repo:              https://github.com/poole/poole
 
 # Gems
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
+
+pages_list:
+  About: '/about'
+  Archive: '/archive'
+  RSS: '/atom.xml'
