@@ -30,6 +30,7 @@ github:
 plugins:
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-sitemap
 
 pages_list:
   About: '/about'
