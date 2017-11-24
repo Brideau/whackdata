@@ -25,11 +25,23 @@ Add the following to your project's `build.sbt` file to get the Boundless Geo re
 
  {% gist Brideau/b96aa05d719fb764d38bb9d75b48aa9d build.sbt %}
 
-Download [this sample file](https://github.com/Brideau/findsrid/blob/master/src/main/resources/Canada3573.gpkg?raw=true) and save it in your project under the ```/src/main/resources``` folder, creating it if it doesn't already exist. Add the contents of the Main class below to whichever class you're working with:
+Download [this sample file](https://github.com/Brideau/findsrid/blob/master/src/main/resources/Canada3573.gpkg?raw=true) and save it in your project under the ```/src/main/resources``` folder, creating it if it doesn't already exist.
+
+## Blocking Approach
+
+The simplest way to do this is to write it without caring about whether your code blocks. To do this, add the contents of the Main class below to whichever class you're working with, following along with the comments:
 
 {% gist Brideau/b96aa05d719fb764d38bb9d75b48aa9d Main.scala %}
 
 That's it! Build, run, and enjoy. If it's possible to identify your SRID from the file you have, there's a good chance the ```AutoIdentifyEPSG``` method will do it.
+
+## Non-Blocking Approach
+
+To achieve the same thing without blocking, wrap everything in a function that returns a Future when it is called. Then, call the function, and use pattern matching to choose what to do with the function returns successfully or not. Make sure you import the global ```ExecutionContext``` at the top and that you block the main thread at the end to prevent the JVM from terminating, as shown below.
+
+{% gist Brideau/b96aa05d719fb764d38bb9d75b48aa9d MainNonBlocking.scala %}
+
+This approach has benefit of being able to complete other work while the file is being loaded, which is handy when you're dealing with large geospatial files.
 
 __
 
