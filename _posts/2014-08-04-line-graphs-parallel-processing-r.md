@@ -6,6 +6,8 @@ image: http://i.imgur.com/A8FlGkz.png
 author: Ryan Brideau
 lang: en_us
 tags: geospatial R visualization
+redirect_from:
+  - /page10/
 ---
 
 ![Fredricton Property Value Line Plot](http://i.imgur.com/xWCF5jN.png)

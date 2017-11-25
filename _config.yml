@@ -55,6 +55,7 @@ plugins:
   - jekyll-gist
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 pages_list:
   About: '/about'
