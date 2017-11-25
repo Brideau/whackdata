@@ -12,6 +12,11 @@ tags: geospatial scala gdal
 
 On occasion, you might find yourself working with a new spatial data set where it would be really handy to figure out what the current SRID is. Luckily, the smart people at [GDAL.org](http://www.gdal.org/) have done the hard work for you. Here's how you do it in Scala using the GDAL Java Bindings.
 
+<div class="message">
+<div class="note"><strong>Note</strong></div>
+If you'd like to see the full working example ahead of time, see: <a href="https://github.com/Brideau/findsrid" rel="noopener" target="_blank">https://github.com/Brideau/findsrid</a>
+</div>
+
 ## GDAL Setup
 
 First, you have to set up GDAL with the Java bindings on your machine. It's not as simple as just having GDAL installed. There's instructions to do this [here](https://trac.osgeo.org/gdal/wiki/GdalOgrInJava) for various systems, and [here](https://trac.osgeo.org/gdal/wiki/BuildingOnMac) for mac, but in my experience these aren't very up to date and you may have a date with StackOverflow to get through this part. The following worked for me on macOS High Sierra:
