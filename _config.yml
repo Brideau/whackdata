@@ -6,6 +6,12 @@ title:            Whack Data
 tagline:          Ryan Brideau
 url:              http://www.whackdata.com
 paginate:         1
+paginate_path: page/:num
+defaults:
+  - scope:
+      path: "page"
+    values:
+      sitemap: false
 basename:         ""
 
 # Assets
@@ -26,11 +32,19 @@ version:             2.0.0
 github:
   repo:              https://github.com/poole/poole
 
+# Tags
+tag_feed_layout: tag_feed
+tag_feed_dir: tag
+tag_page_layout: tag_page
+tag_page_dir: tag
+
 # Gems
 plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-sitemap
+  - jekyll/tagging
+  - jekyll-tagging-related_posts
 
 pages_list:
   About: '/about'

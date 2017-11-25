@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Find a Geospatial File's SRID Using Scala and GDAL
+tags: geospatial scala gdal
 ---
 
 <img src="https://i.imgur.com/x1ggCb4.png" alt="Map of Canada with the words EPSG 3573 printed over top.">

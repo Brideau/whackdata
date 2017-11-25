@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h1 class="page-title">Posts Tagged <em>{{ page.tag }}</em></h1>
+
+<h4><a href="{{page.url}}/index.xml">Tag RSS</a></h4>
+
+{% for post in page.posts %}
+<p>{{ post.date | date_to_string }} <br /> <a href="{{ post.url }}">{{ post.title }}</a></p>
+{% endfor %}
+
+<div id="tag-cloud">
+    <h3>Other Tags:</h3>
+    {{ site | tag_cloud }}
+</div>

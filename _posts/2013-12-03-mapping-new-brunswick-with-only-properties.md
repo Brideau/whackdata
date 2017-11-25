@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Mapping New Brunswick With Only Properties
+tags: geospatial gis open-data
 ---
 
 One of my first introductions to data analysis and visualization was [a map created by MIT student that plotted every citizen in the United States](http://www.fastcodesign.com/1671567/infographic-every-person-in-the-us-and-canada-on-one-crazy-zoomable-map#8). No other feature was present: no roads, no rivers - nothing but people - yet the contours of the country are immediately apparent. It's gorgeous, and is an impressive feat.
