@@ -43,8 +43,6 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-sitemap
-  - jekyll/tagging
-  - jekyll-tagging-related_posts
 
 pages_list:
   About: '/about'

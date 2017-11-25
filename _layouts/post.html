@@ -8,14 +8,6 @@ layout: default
 
   {{ content }}
 
-  {% if page.tags != empty %}
-  Tags:
-  {% for tag in page.tags %}
-  <a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }} </a>
-  {% endfor %}
-  <br>
-  {% endif %}
-
   {% include twitter_plug.html %}<br />
   {% include comments.html %}
   
