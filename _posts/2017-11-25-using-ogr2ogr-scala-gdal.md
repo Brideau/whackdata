@@ -59,8 +59,6 @@ Some drivers, such as the [CSV Driver](http://www.gdal.org/drv_csv.html), take a
 
 {% gist Brideau/ea1c98c089208fa363e12b2f8ee55154 additionalparameter.scala %}
 
-And that's all there is to it!
-
 __
 
 _Ryan Brideau_
