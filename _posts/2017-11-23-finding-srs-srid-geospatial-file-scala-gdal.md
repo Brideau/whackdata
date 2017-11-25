@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Find a Geospatial File's SRID Using Scala and GDAL
+description: A quick tutorial for finding a geospatial file's SRID using Scala and GDAL
+image: https://i.imgur.com/x1ggCb4.png
+author: Ryan Brideau
+lang: en_us
 tags: geospatial scala gdal
 ---
 

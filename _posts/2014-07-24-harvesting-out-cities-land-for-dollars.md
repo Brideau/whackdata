@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Harvesting Our Cities' Land for Dollars
+description: A tutorial on doing tax revenue analysis for a city's land using QGIS.
+image: http://i.imgur.com/6CBra61.png
+author: Ryan Brideau
+lang: en_us
+tags: geospatial gis open-data qgis
 ---
 
 ![Downtown Fredericton's Tax Revenue per Hectare](http://i.imgur.com/KMVBQXZ.png)

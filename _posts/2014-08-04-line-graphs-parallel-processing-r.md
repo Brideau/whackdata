@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Line Graphs and Parallel Processing in R
+description: Using R to create line visualizations like Joy Division's Unknown Pleasures album cover
+image: http://i.imgur.com/A8FlGkz.png
+author: Ryan Brideau
+lang: en_us
+tags: geospatial R visualization
 ---
 
 ![Fredricton Property Value Line Plot](http://i.imgur.com/xWCF5jN.png)

@@ -27,6 +27,17 @@ author:
   url:            https://twitter.com/Brideau
   email:          ryan dot brideau at google mail
 
+twitter:
+  username:       Brideau
+
+social:
+  name: Ryan Brideau
+  links:
+    - https://twitter.com/Brideau
+    - https://ca.linkedin.com/in/ryanbrideau
+    - https://github.com/Brideau
+    - https://keybase.io/Brideau
+
 # Custom vars
 version:             2.0.0
 github:
@@ -43,6 +54,7 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 pages_list:
   About: '/about'

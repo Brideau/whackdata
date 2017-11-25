@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Mapping New Brunswick With Only Properties
+description: A tutorial on using QGIS to map a large number of points.
+image: http://media.tumblr.com/4380b6f7780d14d259577b69e356c0cd/tumblr_inline_mxb1noAOHa1rfk13c.png
+author: Ryan Brideau
+lang: en_us
 tags: geospatial gis open-data
 ---
 
@@ -8,7 +12,7 @@ One of my first introductions to data analysis and visualization was [a map crea
 
 If you look up close, you see that the points are randomly scattered, but at a distance, you can't notice that fine of detail. It occurred to me that the same kind of macro-look could be accomplished with a simple plot of property geolocations. Luckily, GeoNB has exactly that dataset available: [http://www.snb.ca/geonb1/e/DC/catalogue-E.asp](http://www.snb.ca/geonb1/e/DC/catalogue-E.asp)
 
-After that, it's as simple as using [open-source GIS software QGIS](http://qgis.org/en/site/), tweaking a few visual parameters, and you have an amazing black and white version of your own (for a larger look, see [http://www.ryanbrideau.com/dataviz/geo/NBHousingMap.png](http://www.ryanbrideau.com/dataviz/geo/NBHousingMap.png)).
+After that, it's as simple as using [open-source GIS software QGIS](http://qgis.org/en/site/), tweaking a few visual parameters, and you have an amazing black and white version of your own.
 
 ![image](http://media.tumblr.com/4380b6f7780d14d259577b69e356c0cd/tumblr_inline_mxb1noAOHa1rfk13c.png)
 
