@@ -7,39 +7,39 @@ I grew up in a small town in northern New Brunswick, have always had an affinity
 
 I managed to create this (click any image to see a huge PDF) by pulling tens-of-thousands of data points from Google Places:
 
-[![image](https://31.media.tumblr.com/0e15e99c28471ef2fe34c7b3d74c62e3/tumblr_inline_my88q9SONl1rfk13c.png)](http://www.ryanbrideau.com/dataviz/deserts/CanadaHospitals.pdf)
+![image](https://31.media.tumblr.com/0e15e99c28471ef2fe34c7b3d74c62e3/tumblr_inline_my88q9SONl1rfk13c.png)
 
 Well...that's interesting. But what is it? Well that this map shows you is how far you'd have to travel to a hospital if you found yourself at the end of any of those lines and in trouble - the black dots being a hospital or medical clinic. Unfortunately, this doesn't really make any sense, because how often would you find yourself in the remote parts of NWT?
 
 Given that fact, I set about modifying the script so that instead of doing a scan every 30km across the country in a grid, it would load a list of every small town in Canada ([thank you Geocoder.ca](http://geocoder.ca/?freedata=1)). Essentially, this says "if you grew up in town x, how close were you to medical care if you needed it?":
 
-[![image](https://31.media.tumblr.com/37322584ec1774c78834aba123ea9e4f/tumblr_inline_my890dTlEQ1rfk13c.png)](http://www.ryanbrideau.com/dataviz/deserts/CanadaHospitalsCity.pdf)
+![image](https://31.media.tumblr.com/37322584ec1774c78834aba123ea9e4f/tumblr_inline_my890dTlEQ1rfk13c.png)
 
 I have to admit I was pretty shocked when I saw this. Though there's lots of talk about doctor shortages - and for good reason - with a few exceptions in the north, there's pretty much a medical clinic close by if you ever need it. I went a step further and did a town-by-town analysis for New Brunswick as well:
 
-[![image](https://31.media.tumblr.com/9ca42a1cdca25c3742e53f5eaa121b85/tumblr_inline_my894nVaF21rfk13c.png)](http://www.ryanbrideau.com/dataviz/deserts/NBHospitalCity.pdf)
+![image](https://31.media.tumblr.com/9ca42a1cdca25c3742e53f5eaa121b85/tumblr_inline_my894nVaF21rfk13c.png)
 
 This of course doesn't tell the whole picture, like if the right kind of doctor is at the right place when you need them, but this general approach could make for an interesting way to present data if more time/care was taken to look at a very specific case.
 
-Now what about other things, like cultural attractions? For example, I had never been exposed to art growing up in my home town. As it turns out, there was good reason for it:&nbsp;[![image](https://31.media.tumblr.com/9ac3c49dbd391bd5262ff63067100ba1/tumblr_inline_my89d6h36C1rfk13c.png)](http://www.ryanbrideau.com/dataviz/deserts/NBArtGalleriesCity.pdf)
+Now what about other things, like cultural attractions? For example, I had never been exposed to art growing up in my home town. As it turns out, there was good reason for it:&nbsp;![image](https://31.media.tumblr.com/9ac3c49dbd391bd5262ff63067100ba1/tumblr_inline_my89d6h36C1rfk13c.png)
 
 All those red lines pointing toward Miramichi mean that I was essentially in a complete art desert for most of my life. Contrast this to someone from southern Ontario where they practically have art farms:
 
-[![image](https://31.media.tumblr.com/cd3832fd5f26262848fdd2d0ce7a79e4/tumblr_inline_my89g4DuAo1rfk13c.png)](www.ryanbrideau.com/dataviz/deserts/CanadaArtGalleriesCity.pdf)
+![image](https://31.media.tumblr.com/cd3832fd5f26262848fdd2d0ce7a79e4/tumblr_inline_my89g4DuAo1rfk13c.png)
 
 Small-town Saskatchewan, Alberta and Manitoba, as it turns out, aren't in a much better situation than NB:
 
-[![image](https://31.media.tumblr.com/61c9f8fbdccee11368c943f7eb610445/tumblr_inline_my89k2y26E1rfk13c.png)](CanadaArtGalleriesCity)
+![image](https://31.media.tumblr.com/61c9f8fbdccee11368c943f7eb610445/tumblr_inline_my89k2y26E1rfk13c.png)
 
 My next approach was to see if I could get this to work on a very small scale - the size of a city like Fredericton. Initial attempts to use a uniform grid to scan the city and draw lines to the nearest locations didn't work out because they simply didn't make much sense at that scale (nobody lives in O'Dell park, so what does it matter how far it is from a grocery store?). So this time, I modified the script to read in the coordinate for every building in NB, filtering it for buildings in the city. My first graph shows the 'as the crow flies' distance from places to the nearest grocery store, giving a feel for how much car travel is required just for daily errands:
 
-[![image](https://31.media.tumblr.com/2ad3204c1299cadc67052605205681b1/tumblr_inline_my89scM5Hi1rfk13c.png)](www.ryanbrideau.com/dataviz/deserts/FrederictonGroceryByBuilding.pdf)
+![image](https://31.media.tumblr.com/2ad3204c1299cadc67052605205681b1/tumblr_inline_my89scM5Hi1rfk13c.png)
 
 I wasn't very happy with how this one turned out however, as a quick scan found a couple of suspect points from my Google Places API grab. Some of those black dots don't correspond to places where a person could actually get groceries. At the small scale, you really are at the whims of the quality of data Google has. It would also be better to do this by driving distance vs. a straight-line, and maybe I'll try that in the future.
 
 To try something a bit different, I grabbed the recycling bin locations from [Fredericton's open data catalogue](http://www.fredericton.ca/en/citygovernment/Catalogue.asp)&nbsp;(this one had a whopping 4 data points) and did a similar analysis showing how far most homes and buildings are from the bin locations:
 
-[![image](https://31.media.tumblr.com/2ed391e044e153f7f9a1cc4038c42b7a/tumblr_inline_my89zd0DIK1rfk13c.png)](www.ryanbrideau.com/dataviz/deserts/FrederictonRecyclingByBuilding.pdf)
+![image](https://31.media.tumblr.com/2ed391e044e153f7f9a1cc4038c42b7a/tumblr_inline_my89zd0DIK1rfk13c.png)
 
 Now before you jump on me, I know that many places have pickup. But [if you happen to be living in an apartment or multi-family dwelling](http://www.fredericton.ca/en/environment/whyrecycle.asp) (two places inhabited more often than not by people with lesser means) and have ever tried to go to one of these things, maybe this can shed a light on why they are always such a mess:
 
