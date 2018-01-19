@@ -12,7 +12,7 @@ redirect_from:
 
 ![Fredricton Property Value Line Plot](http://i.imgur.com/xWCF5jN.png)
 
-A few months ago I came across one of the most beautiful visualizations I have ever seen: [James Cheshire's Population Lines Print](http://spatial.ly/2013/09/population-lines/). What I love about it is that, in the absence of any traditional map features, the outlines of countries and continents are immediately apparent. And as long as you are familiar with what the land masses of the globe look like, you know exactly what the plot is without even needing to be told. Another interesting feature is that the peaks also give information about both the population _and_ and the density: the area under the graph represents the total population, while the higher the peak, the more dense it is. (Hence the huge peak of Tokyo, and the low, wide peak of Mexico City.)
+A few months ago I came across one of the most beautiful visualizations I have ever seen: [James Cheshire's Population Lines Print](http://spatial.ly/2014/08/population-lines/). What I love about it is that, in the absence of any traditional map features, the outlines of countries and continents are immediately apparent. And as long as you are familiar with what the land masses of the globe look like, you know exactly what the plot is without even needing to be told. Another interesting feature is that the peaks also give information about both the population _and_ and the density: the area under the graph represents the total population, while the higher the peak, the more dense it is. (Hence the huge peak of Tokyo, and the low, wide peak of Mexico City.)
 
 When I first saw the post, I went to this blog to see how he pulled it off. Unfortunately, there weren't any details. So, I had to figure it out myself.
 
@@ -83,7 +83,7 @@ Luckily, R now has the ability to do parallel processing to take full advantage 
 
 #### Plotting the Data
 
-To plot the data, I wrote [this script](https://github.com/Brideau/GeospatialLineGraphs/blob/master/02PlotData.R) which does the following:
+To plot the data, I wrote [this script](https://github.com/Brideau/GeospatialLineGraphs/blob/master/02PlotDataPeaks.R) which does the following:
 
 1.  Load the data you want to plot, and pad the top and bottom to give it a border (padding the left and right is most easily done in a spreadsheet by adding rows of 0's to the top and bottom).
 2.  Find the maximum value in all of the data, and select a factor that will be used to scale the line heights to fit the plot (this is done through trial and error).
@@ -94,6 +94,6 @@ To plot the data, I wrote [this script](https://github.com/Brideau/GeospatialLin
 
 #### That's It!
 
-There you have it - that's all there is to these beautiful line plots. If you love the world map, go buy it from James here to support the work he does: [Population Lines](http://spatial.ly/2013/09/population-lines/). And as always, if you have any questions, ask away below or send me an e-mail.
+There you have it - that's all there is to these beautiful line plots. If you love the world map, go buy it from James here to support the work he does: [Population Lines](http://spatial.ly/2014/08/population-lines/). And as always, if you have any questions, ask away below or send me an e-mail.
 
 -Ryan
