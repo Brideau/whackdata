@@ -2,13 +2,13 @@
 layout: post
 title: Converting Geospatial Files Using ogr2ogr in Scala
 description: A tutorial on how to use ogr2ogr from your Scala code
-image: https://i.imgur.com/yawcHmn.png
+image: ./images/ogr2ogr.png
 author: Ryan Brideau
 lang: en_us
 tags: geospatial scala gdal ogr2ogr
 ---
 
-<img src="https://i.imgur.com/yawcHmn.png" alt="ogr2ogr over top of the Scala logo">
+<img src="/images/ogr2ogr.png" alt="ogr2ogr over top of the Scala logo">
 
 Converting geospatial files from one format to another is one of the most common tasks when starting a new project. This process has been made significantly easier by GDAL's [ogr2ogr](http://www.gdal.org/ogr2ogr.html), a command line tool for doing exactly that. Using it from within your Scala code isn't hard, but it can be tricky. I'll show you how below.
 

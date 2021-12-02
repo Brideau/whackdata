@@ -2,13 +2,13 @@
 layout: post
 title: Find a Geospatial File's SRID Using Scala and GDAL
 description: A quick tutorial for finding a geospatial file's SRID using Scala and GDAL
-image: https://i.imgur.com/x1ggCb4.png
+image: /epsg3573.png
 author: Ryan Brideau
 lang: en_us
 tags: geospatial scala gdal
 ---
 
-<img src="https://i.imgur.com/x1ggCb4.png" alt="Map of Canada with the words EPSG 3573 printed over top.">
+<img src="/epsg3573.png" alt="Map of Canada with the words EPSG 3573 printed over top.">
 
 On occasion, you might find yourself working with a new spatial data set where it would be really handy to figure out what the current SRID is. Luckily, the smart people at [GDAL.org](http://www.gdal.org/) have done the hard work for you. Here's how you do it in Scala using the GDAL Java Bindings.
 
