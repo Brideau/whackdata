@@ -1,0 +1,275 @@
+.sizewarning {
+  display:none;
+  color: #F17A49;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.post h3 {
+  margin-left: 5%;
+  text-align: center;
+  font-family: 'Anonymous Pro', Arial, sans-serif;
+}
+
+.chart svg {
+  overflow: visible;
+}
+
+text {
+  font-family: 'Anonymous Pro', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#menu {
+  text-align: center;
+  line-height: 1.5em;
+}
+#menu select {
+  border: none;
+  background-color: white;
+  background-color: rgba(103, 103, 103, 0.09);
+  font-size: 1em;
+}
+
+.note {
+  font-size: 0.6em;
+  margin-bottom: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #C2C2C2;
+  stroke-width: .5px;
+  stroke-linejoin: round;
+  shape-rendering: crispEdges;
+}
+#creep-princeedwardisland2005,
+#creep-princeedwardisland2014 {
+  stroke-width: 3px;
+}
+#creep-newbrunswick2005,
+#creep-newbrunswick2014 {
+  opacity: 0.4;
+}
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+}
+
+.voronoi-layer path {
+  fill: none;
+  pointer-events: all;
+}
+
+.line-hover {
+  stroke-width: 4;
+}
+
+.highlighted {
+  stroke-width: 2;
+}
+.previous {
+  stroke-width: 2;
+  stroke-dasharray: 5,5;
+}
+.bgline {
+    stroke: rgba(103, 103, 103, 0.28);
+}
+
+#flat-2016 {
+  stroke: #2b932a;
+}
+#flat-2005 {
+  stroke: #acb524;
+}
+
+#creep-newbrunswick2014 {
+  stroke: #de1c18;
+}
+#creep-newbrunswick2005 {
+  stroke: #e7641e;
+}
+
+#creep-princeedwardisland2014 {
+  stroke: #50ad78;
+}
+#creep-princeedwardisland2005 {
+  stroke: #778266;
+}
+
+.vert-line {
+  stroke: black;
+  stroke-width: 1;
+}
+.hor-line-a, .hor-line-b {
+  stroke: black;
+  stroke-width: 1;
+}
+
+.chart .y.label, .chart .x.label {
+    font-size: 1em;
+}
+
+/* Hide the axes for the ranking chart */
+#ranking .x-axis-layer path,
+#ranking .y-axis-layer path {
+    visibility: hidden;
+}
+
+#ranking .x-axis-layer .tick line {
+  stroke: #C6C6C6;
+  opacity: .5;
+}
+
+#ranking .y-axis-layer .most,
+#ranking .y-axis-layer .least {
+  font-size: 0.8em;
+  fill: #8C8C8C;
+}
+
+@media (max-width: 800px) {
+  .chart text  {
+    font-size: 0.7em;
+  }
+  .chart .y.label, .chart .x.label  {
+    font-size: 0.9em;
+  }
+  .flat-2016-label {
+    font-size: 0.9em;
+  }
+  #ranking .y-axis-layer .ranking {
+    font-size: 0.8em;
+  }
+  #ranking .y-axis-layer .most,
+  #ranking .y-axis-layer .least {
+    font-size: 0.6em;
+  }
+}
+
+@media (max-width: 400px) {
+  .chart text  {
+    font-size: 0.55em;
+  }
+  .chart .y.label, .chart .x.label  {
+    font-size: 0.8em;
+  }
+  .flat-2016-label {
+    font-size: 0.9em;
+  }
+}
+
+.tt-box text {
+  text-anchor: middle;
+  paint-order: stroke;
+  fill: black;
+  stroke: white;
+  stroke-width:6px;
+  stroke-linejoin: round;
+}
+.tt-background {
+  fill: #fff;
+}
+.tt-circle {
+  opacity: 0.75;
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+.tt-title {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+/* Rotate x-axes */
+/*.x-axis-layer .tick text {
+  transform: rotate(-45deg);
+}*/
+
+.bgprov {
+  stroke: #C6C6C6;
+  opacity: 0.25;
+}
+.novascotia {
+  stroke: #b05a28;
+}
+.princeedwardisland {
+  stroke: #b2d085;
+}
+.newbrunswick {
+  stroke: #df2425;
+}
+.newfoundlandandlabrador {
+  stroke: #FF8585;
+}
+.quebec {
+  stroke: #96c0db;
+}
+.ontario {
+  stroke: #ed7f21;
+}
+.manitoba {
+  stroke: #cab1d2;
+}
+.saskatchewan {
+  stroke: #66408d;
+}
+.alberta {
+  stroke: #389f3d;
+}
+.britishcolumbia {
+  stroke: #a948c0;
+}
+.nunavut {
+  stroke: #020202;
+}
+.yukon {
+  stroke: #7c7a7a;
+}
+.northwestterritories {
+  stroke: #2877b3;
+}
+
+.novascotia-text {
+  fill: #b05a28;
+}
+.princeedwardisland-text {
+  fill: #b2d085;
+}
+.newbrunswick-text {
+  fill: #df2425;
+}
+.newfoundlandandlabrador-text {
+  fill: #FF8585;
+}
+.quebec-text {
+  fill: #96c0db;
+}
+.ontario-text {
+  fill: #ed7f21;
+}
+.manitoba-text {
+  fill: #cab1d2;
+}
+.saskatchewan-text {
+  fill: #66408d;
+}
+.alberta-text {
+  fill: #389f3d;
+}
+.britishcolumbia-text {
+  fill: #a948c0;
+}
+.nunavut-text {
+  fill: #020202;
+}
+.yukon-text {
+  fill: #7c7a7a;
+}
+.northwestterritories-text {
+  fill: #2877b3;
+}
