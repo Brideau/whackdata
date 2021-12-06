@@ -87,5 +87,3 @@ Some next steps I'm considering for presenting this better would be:
 2.  Do plots of only the outliers to see who is really knocking it out of the park in harvesting their land / where are the biggest drains coming from.
 
 3.  Really dig into the details of the data instead of keeping the macro perspective.
-
--Ryan

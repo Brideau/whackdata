@@ -41,8 +41,4 @@ _(Source:&nbsp;[CAUBO: Financial Information of Universities and Colleges](http:
 
 In the next post I'll be taking a closer look at the salary figures that have been released and place them in context of other similar institutions.
 
---
-
-Ryan Brideau
-
 _Disclaimer: As mentioned above, I know members of both the UNB administration and faculty, and consider many to be friends. I am not being compensated monetarily or in any other way to produce this analysis by either side. All of the scripts I've used to create these are available for scrutiny on my GitHub page (for those that understand R, that is - sorry, the data was too complicated for Excel):&nbsp;[https://github.com/Brideau/UNBStrikeWatch](https://github.com/Brideau/UNBStrikeWatch)_

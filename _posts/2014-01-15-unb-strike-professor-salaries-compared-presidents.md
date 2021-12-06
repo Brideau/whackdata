@@ -97,8 +97,4 @@ UNB comes out directly in the middle of the pack. A completely unexpected, but i
 
 _If you enjoyed this, also see&nbsp;[my analysis of UNB's operating budget](http://whackdata.tumblr.com/post/73303569384/the-unb-strike-by-the-numbers-unb-operating-grant)._
 
-&mdash;
-
-Ryan Brideau
-
 _Disclaimer: I know members of both the UNB administration and faculty, and consider many to be friends. I am not being compensated monetarily or in any other way to produce this analysis by either side. All of the scripts I&rsquo;ve used to create these are available for scrutiny on my GitHub page (for those that understand R, that is - sorry, the data was too complicated for Excel):&nbsp;[https://github.com/Brideau/UNBStrikeWatch](https://github.com/Brideau/UNBStrikeWatch)_

@@ -58,7 +58,3 @@ Now you can build and run it, and it should create and store a shapefile in a ne
 Some drivers, such as the [CSV Driver](http://www.gdal.org/drv_csv.html), take a number of additional parameters to configure the output format. These can be added as shown here:
 
 {% gist Brideau/ea1c98c089208fa363e12b2f8ee55154 additionalparameter.scala %}
-
-__
-
-_Ryan Brideau_

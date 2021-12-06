@@ -95,5 +95,3 @@ To plot the data, I wrote [this script](https://github.com/Brideau/GeospatialLin
 #### That's It!
 
 There you have it - that's all there is to these beautiful line plots. If you love the world map, go buy it from James here to support the work he does: [Population Lines](http://spatial.ly/2014/08/population-lines/). And as always, if you have any questions, ask away below or send me an e-mail.
-
--Ryan

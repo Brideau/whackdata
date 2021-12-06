@@ -46,5 +46,3 @@ Now before you jump on me, I know that many places have pickup. But [if you happ
 ![image](https://31.media.tumblr.com/456449f9aff3e14e54ae6b3163923403/tumblr_inline_my8akaZbqv1rfk13c.jpg)
 
 There's lots more than can be done using this approach, and I'd love to hear people's ideas. I've put all of the code up on GitHub, though it might be a bit hairy to go through since it's in a bunch of different files:&nbsp;[https://github.com/Brideau/LonelyPlaces/](https://github.com/Brideau/LonelyPlaces/)
-
-Enjoy!

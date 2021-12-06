@@ -52,7 +52,3 @@ To achieve the same thing without blocking, wrap everything in a function that r
 {% gist Brideau/b96aa05d719fb764d38bb9d75b48aa9d MainNonBlocking.scala %}
 
 This approach has benefit of being able to complete other work while the file is being loaded, which is handy when you're dealing with large geospatial files.
-
-__
-
-_Ryan Brideau_
