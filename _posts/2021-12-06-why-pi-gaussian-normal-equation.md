@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Why Does Pi Show up in the Normal Distribution?
-description: Description
+description: Understand how bell curves are formed and their counterintuitive relationship to the number Pi
 image: ./images/whypi/why_pi_title.png
 author: Ryan Brideau
 lang: en_us
-tags: placeholder
+tags: math, statsitics
 ---
 
 <div>
@@ -23,7 +23,7 @@ Anyone that's taken a statistics course in university has come across this equat
  1. How exactly does this thing form a normal distribution?
  2. What the hell is <span>\\( \pi \\)</span> doing in there?
 
-The first question seemed simple enough to figure out: I would just have to trace back the history of the equation and put it together piece by piece. But the second question absolutely stumped me: what in the world does a bell curve have to do with a circle? 
+The first question seemed simple enough to figure out: I would just have to trace back the history of the equation and put it together piece by piece. But the second question absolutely stumped me: what in the world does a bell curve have to do with a circle?
 
 I read through all of the [Math Stackexchange solutions](https://math.stackexchange.com/q/28558/424609), searched around, and asked on Twitter, but never felt like any of the answers gave me the intuition I was looking for. They relied too heavily on analytical solutions, or when visual techniques were employed, the connections felt hand-wavy to me. After doing a bit of my own research, here's my attempt at explaining the connection without resorting to any advanced math.
 
