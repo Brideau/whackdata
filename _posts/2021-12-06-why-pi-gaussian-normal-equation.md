@@ -27,11 +27,7 @@ The first question seemed simple enough to figure out: I would just have to trac
 
 I read through all of the [Math Stackexchange solutions](https://math.stackexchange.com/q/28558/424609), searched around, and asked on Twitter, but never felt like any of the answers gave me the intuition I was looking for. They relied too heavily on analytical solutions, or when visual techniques were employed, the connections felt hand-wavy to me. After doing a bit of my own research, here's my attempt at explaining the connection without resorting to any advanced math.
 
-<div>
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Math friends: without resorting to doing a proof, what’s an intuitive reason for why pi shows up in the normalizing constant for the Normal pmf? What’s the connection to a circle? <a href="https://t.co/4D1qchgItK">pic.twitter.com/4D1qchgItK</a></p>&mdash; Ryan Brideau (@Brideau) <a href="https://twitter.com/Brideau/status/1462970015662153734?ref_src=twsrc%5Etfw">November 23, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-</div>
-
-## First what exactly is a bell curve?
+## First, what exactly is a bell curve?
 
 Before we get to the <span>\\( \pi \\)</span> part, it helps to gain some insight into how exactly a bell curve is formed. Let's start with the exponential function, which you can see within the equation above. Here it is standing on its own:
 
@@ -59,13 +55,13 @@ This function, <span>\\( f(x) = e^{-x^2} \\)</span>, is just one particular bell
 For example, the equation <span>\\( f(x) = x^2 + x + 2 \\)</span>  plotted in blue below is not concave, and when <span>\\( e \\)</span> is raised to it, you get the green curve, which is obviously not a bell curve:
 
 <div>
-<img src="/images/whypi/not_a_bell_curve.png" alt="">
+<img src="/images/whypi/not_a_bell_curve.png" alt="A graph of a convex quadratic and e raised to the power of this quadratic, both opening upwards.">
 </div>
 
 If we switch the equation to be <span>\\( f(x) = -2x^2 + 3x + 2 \\)</span>, though, we get a concave function, and <span>\\( e \\)</span> raised to that forms the bell curve shape:
 
 <div>
-<img src="/images/whypi/is_a_bell_curve.png" alt="">
+<img src="/images/whypi/is_a_bell_curve.png" alt="A graph of a concave quadratic, and the bell curve that results from raising e to the power of this quadratic.">
 </div>
 <br>
 For this reason, the general equation of a equation of a bell curve is <span>\\( e \\)</span> raised to a quadratic:
@@ -126,7 +122,15 @@ You can now think of this as putting one of these bell curves on the x-axis and 
 
 To get the area of one of the curves, you just need to get the volume of the "hill" that forms, and then take the square root of that value. An analogy to this with fewer dimensions is knowing the area of a square, and then getting its side length by taking the square root.
 
-But, how do we get the volume? One way would be to chunk up the hill into squares like above, and then get the height of each in the middle of the square. You could then calculate the volume of these square pillars as <span>\\( (\text{Area of Each Square}) \cdot (\text{Height}) \\)</span> and then add up all those smaller volumes. The smaller you make the squares, the better the approximation.
+<div class="message">
+<strong>Note:</strong> This trick will not work for all types of functions. If you try this with a quadratic (say, <span>\( -x^2 + 9 \)</span>), you will not get the correct answer. The reason is that this only works for functions that are rotationally symmetric when they are squared. While the Gaussian is, you can see from a similar plot of the quadratic that it is "boxy" and is not symmetric through rotation the way that the curve above is:
+<br /><br />
+<div>
+<img src="/images/whypi/3d_quadratic@2x.png" alt="A 3d chart showing a quadratic along the x and y axes, forming a boxy hill along the z-axis.">
+</div>
+</div>
+
+OK, so how do we get the volume of the "hill" above? One way would be to chunk it up into squares like above, and then get the height of each in the middle of the square. You could then calculate the volume of these square pillars as <span>\\( (\text{Area of Each Square}) \cdot (\text{Height}) \\)</span> and then add up all those smaller volumes. The smaller you make the squares, the better the approximation.
 
 However, this hides where the <span>\\( \pi \\)</span> comes from. So instead, imagine that instead of using squares, we divide it up radially. In this diagram, we are looking down from the top and we see the contour lines of the hill:
 
